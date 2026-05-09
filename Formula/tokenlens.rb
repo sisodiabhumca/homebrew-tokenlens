@@ -1,32 +1,32 @@
 # Homebrew formula for TokenLens.
-# Auto-published by the v0.2.1 release. To bump: regenerate from
+# Auto-published by the v0.2.2 release. To bump: regenerate from
 # https://github.com/sisodiabhumca/tokenlens/releases.
 
 class Tokenlens < Formula
   desc "Token-aware observability + filtering layer for AI coding agents"
   homepage "https://github.com/sisodiabhumca/tokenlens"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sisodiabhumca/tokenlens/releases/download/v#{version}/tokenlens-aarch64-apple-darwin.tar.gz"
-      sha256 "9899513eb480a9db2f839d4728c841c20466453e2d8e021d18ea1182acb07054"
+      sha256 "894ae37171e1f246493b4508570a702974d29a9e174fc0374bc9f93aae781a96"
     end
     on_intel do
       url "https://github.com/sisodiabhumca/tokenlens/releases/download/v#{version}/tokenlens-x86_64-apple-darwin.tar.gz"
-      sha256 "7fade978d26d22ab76f22351ca2372556a9a4cf96815aa0f2e818330e90a5599"
+      sha256 "5dbbffe98f4c95622164286944eb2d5e3c4956a793d5c97628f5da0a5d040d98"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sisodiabhumca/tokenlens/releases/download/v#{version}/tokenlens-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2da5cb97c1f9ba9df5f6f3afeb8db860ee751ca4b2a836c1c1a43842cefa461e"
+      sha256 "35a63c603d29923b0def412b3c0a410429228245275b1fe84a34eec821391334"
     end
     on_intel do
       url "https://github.com/sisodiabhumca/tokenlens/releases/download/v#{version}/tokenlens-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7d2be93c595e3f3a7fae1de5631e14887232db457d75c1ed27f54bcecf9ad868"
+      sha256 "00e97f27723633d84eb977d18d24d7128558b6342b0edd53499fc41cb9d3678b"
     end
   end
 
